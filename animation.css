@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 nov. 2015, 16:21:28
+    Author     : Pascal
+*/
+
+body {
+    background-color: black;
+}
+
+#wrapper {
+    margin: 15% auto;
+    width: 1200px;
+    perspective: 800px;
+    
+}
+
+#allPlan {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    animation: Carrousel 15s infinite ease-in-out;
+}
+
+#allPlan:hover {
+    animation: Carrousel 1s infinite  ease;
+}
+
+.plan {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-size: 8em;
+    color: #FFF;
+}
+
+
+@keyframes Carrousel {
+    from { transform: rotateY(360deg); }
+    to { transform:  rotateY(0deg); }
+}
+
+#allPlan > .p1 {  transform: translateZ(200px); background-image:  url(http://lorempixel.com/200/200); }
+#allPlan > .p2 {  transform: rotateY(95deg)  translateZ(200px);  background-image:  url(http://lorempixel.com/200/200/cats); }
+#allPlan > .p3 {  transform: rotateY(190deg)  translateZ(200px);   background-image:  url(http://lorempixel.com/200/200/fashion);}
+#allPlan > .p4 {  transform: rotateY(270deg)  translateZ(200px);  background-image:  url(http://lorempixel.com/200/200/nature); }
+
+#allPlan > .p5 {  transform: rotateY(180deg)  translateZ(200px);  background-image:  url(http://lorempixel.com/400/200/animals); }
+#allPlan > .p6 {  transform: rotateY(225deg)  translateZ(200px);   background-image:  url(http://lorempixel.com/400/200/people);}
+#allPlan > .p7 {  transform: rotateY(270deg)  translateZ(200px);   background-image:  url(http://lorempixel.com/400/200/cats);}
+#allPlan > .p8 {  transform: rotateY(315deg)  translateZ(200px);   background-image:  url(http://lorempixel.com/400/200/abstract);}
